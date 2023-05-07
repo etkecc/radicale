@@ -1,0 +1,12 @@
+variables:
+  VERSION: v3.1.8.2
+
+docker:
+  only: ['main']
+  services:
+    - docker:dind
+  image: ${CI_DEPENDENCY_PROXY_GROUP_IMAGE_PREFIX}/jdrouet/docker-with-buildx:latest
+  script:
+    - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
+    - docker buildx create --use
+    - docker buildx build --build-arg VERSION=${VERSION} --platform linux/arm64/v8,linux/amd64 --push -t ${CI_REGISTRY_IMAGE}:${VERSION} -t registry.etke.cc/etke.cc/radicale:${VERSION} .
