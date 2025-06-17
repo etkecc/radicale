@@ -3,6 +3,7 @@ on:
   push:
     branches: [ "main" ]
 env:
+  # renovate: datasource=docker depName=tomsquest/docker-radicale
   app_version: 3.5.4.0
 permissions:
   checks: write
