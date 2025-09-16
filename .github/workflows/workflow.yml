@@ -4,7 +4,7 @@ on:
     branches: [ "main" ]
 env:
   # renovate: datasource=docker depName=tomsquest/docker-radicale
-  app_version: 3.5.5.0
+  app_version: 3.5.6.0
 permissions:
   checks: write
   contents: write
