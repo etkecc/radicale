@@ -1,0 +1,25 @@
+# SPDX-FileCopyrightText: 2025-2026 Suguru Hirahara
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+version = 1
+
+# Computer-generated files and other files which cannot be copyrighted
+[[annotations]]
+path = [
+    ".github/FUNDING.yml",
+    ".github/renovate.json",
+    ".gitignore",
+    ".pre-commit-config.yaml"
+]
+SPDX-FileCopyrightText = "NONE"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = [
+    ".github/workflows/workflow.yml",
+    "Dockerfile",
+    "README.md"
+]
+SPDX-FileCopyrightText = "2023-2026 Aine"
+SPDX-License-Identifier = "AGPL-3.0-or-later"

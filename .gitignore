@@ -1,1 +1,4 @@
 /testdata
+
+.ansible
+/var/
